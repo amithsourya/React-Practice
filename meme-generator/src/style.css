@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Karla", sans-serif;
+    margin: 0;
+}
+.navigation{
+    height: 65px;
+    background-color: rgb(255, 222, 92);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo{
+    margin-right: 6px;
+    height: 100%;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 20.7482px;
+    line-height: 24px;
+    letter-spacing: -0.1em;
+    color: white;
+    margin-right: auto;
+}
+
+.subtitle{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    color: white;
+}
