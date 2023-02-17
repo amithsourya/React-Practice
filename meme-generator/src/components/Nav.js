@@ -1,5 +1,5 @@
 import React from "react"
-//import "../images/t"
+
 export default function Nav(){
     return (
         <nav className="navigation">
