@@ -17,7 +17,6 @@ export default function Meme(){
     }, [])
 
     const changeMeme = function (){
-        
         const randomNumber = Math.floor(Math.random() * allMemes.length)
         const url = allMemes[randomNumber].url
         setMeme(prev => ({
@@ -26,8 +25,12 @@ export default function Meme(){
         }))
     }
 
-    const handleChange = function(){
-
+    const handleChange = function(event){
+        const {name, value} = event.target
+        setMeme(prev => (
+           { ...prev,
+            [name]: value}
+        ))
     }
 
     return (
@@ -39,6 +42,7 @@ export default function Meme(){
                     onChange = {handleChange}
                     name = "topText"
                     value = {meme.topText}
+                    placeholder = "Enter Top text"
                  />
                  <input
                     type="text"
@@ -46,6 +50,7 @@ export default function Meme(){
                     onChange = {handleChange}
                     name = "bottomText"
                     value = {meme.bottomText}
+                    placeholder = "Enter Bottom text"
                  />
                  <button
                     className="form--button"
